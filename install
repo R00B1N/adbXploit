@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Ahora se instalara adbxploit"
+sleep 2s
+pip install colorama
+sleep 1s
+git clone https://github.com/MasterDevX/Termux-ADB
+sleep 1s
+cd Termux-ADB
+bash InstallTools.sh
+sleep 2s
+echo "ADB ha sido instalado"
+sleep 1s
+cd ..
+clear
+ls
