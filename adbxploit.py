@@ -6,7 +6,7 @@ import subprocess
 from colorama import Fore, init
 init()
 
-os.system('cls')
+os.system('clear')
 
 print(Fore.RED)
 
@@ -71,13 +71,13 @@ while True:
 		subprocess.call(f'adb connect {out}', shell=True)
 		print("Presione una tecla para Continuar...")
 		input()
-		os.system('cls')
+		os.system('clear')
 
 	elif ask==1:
 		subprocess.call('adb devices', shell=True)
 		print("Presione una tecla para Continuar...")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.RED)
 
 	elif ask==2:
@@ -85,7 +85,7 @@ while True:
 		disconnect = (ip+':'+"5555")
 		subprocess.call(f'adb disconnect {disconnect}', shell=True)
 		time.sleep(3)
-		os.system('cls')
+		os.system('clear')
 		print(Fore.RED)
 
 	elif ask==3:
@@ -102,14 +102,14 @@ while True:
 			subprocess.call('adb root', shell=True)
 			subprocess.call('adb shell', shell=True)
 			time.sleep(1)
-			os.system('cls')
+			os.system('clear')
 			print(Fore.GREEN)
 		elif root==2:
 			print("Se abrira una shell en modo normal...")
 			time.sleep(2)
 			subprocess.call('adb shell', shell=False)
 			time.sleep(1)
-			os.system('cls')
+			os.system('clear')
 			print(Fore.GREEN)
 
 	elif ask==4:
@@ -123,7 +123,7 @@ while True:
 		print("Revisa la ruta para ver tu captura de pantalla")
 		print("\nPresiona una tecla...")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.RED)
 
 	elif ask==5:
@@ -147,7 +147,7 @@ while True:
 		subprocess.call('adb shell pm list packages', shell=True)
 		print("Presione una tecla.")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.RED)
 
 	elif ask==8:
@@ -155,12 +155,12 @@ while True:
 		subprocess.call(f'adb install {ruta}', shell=True)
 		print("\nPresione una tecla para Continuar...")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.GREEN)
 
 	elif ask==9:
 		subprocess.call('adb reboot', shell=True)
-		os.system('cls')
+		os.system('clear')
 		print(Fore.YELLOW)
 
 	elif ask==10:
@@ -168,7 +168,7 @@ while True:
 		subprocess.call(f'adb uninstall {n_p_a}', shell=True)
 		print("Presione una tecla para Continuar...")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.GREEN)
 
 	elif ask==11:
@@ -177,7 +177,7 @@ while True:
 		print("Los Datos Moviles han sido Activados")
 		print("\nPresione una tecla...")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.RED)
 
 	elif ask==12:
@@ -194,7 +194,7 @@ while True:
 		subprocess.call('adb shell cat/proc/cpuinfo', shell=True)
 		print("\nPresione una tecla para Continuar...")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.MAGENTA)
 
 	elif ask==14:
@@ -207,7 +207,7 @@ while True:
 		print("Verifique su archivo...")
 		print("Presione una tecla para continuar...")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.GREEN)
 
 	elif ask==15:
@@ -218,7 +218,7 @@ while True:
 		subprocess.call(f'adb pull {ruta} {destino}', shell=True)
 		print("Presione una tecla para continuar...")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.MAGENTA)
 
 	elif ask==16:
@@ -229,7 +229,7 @@ while True:
 		subprocess.call(f'adb pull {ruta} {destino}', shell=True)
 		print("Presione una tecla para continuar...")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.RED)
 
 	elif ask==17:
@@ -251,5 +251,5 @@ while True:
 	else:
 		print("SYNTAX ERROR XD...\nPresione una tecla...")
 		input()
-		os.system('cls')
+		os.system('clear')
 		print(Fore.GREEN)
